@@ -31,10 +31,8 @@ $$
 
 $$
 \begin{align}
-
 f(x)&=a_0+a_1x+a_2x^2+a_3x^3+\cdots \\
 &= \sum_{i=0}^{+\infty} a_ix^i
-
 \end{align}
 $$
 
@@ -44,14 +42,12 @@ $$
 
 $$
 F(x)=\sum_{i=0}^{+\infty} x^i=\frac{1}{1-x}
-
 $$
 
 又，
 
 $$
 \frac{1}{1-ax}=\sum_{i=0}^{+\infty} a^ix^i
-
 $$
 
 当 
@@ -64,13 +60,9 @@ $$
 
 $$
 \begin{align}
-
 F(x)&=\sum_{i=0}^{+\infty} a_ix^i \\
-
 xF(x)&=\sum_{i=0}^{+\infty} a_ix^{i+1}\\
-
 x^2F(x)&=\sum_{i=0}^{+\infty} a_ix^{i+2}
-
 \end{align}
 $$
 
@@ -78,7 +70,6 @@ $$
 
 $$
 x=(1-x-x^2)F(x)
-
 $$
 
 即， 
@@ -89,14 +80,12 @@ $$F(x)=\frac{x}{1-x-x^2}$$
 
 $$
 \frac{x}{1-x-x^2}=\frac{1}{\sqrt{5}}\cdot(\frac{1}{1-(\frac{1+\sqrt{5}}{2})x}-\frac{1}{1-(\frac{1-\sqrt{5}}{2})x})
-
 $$
 
 故，
 
 $$
 a_n=\frac{1}{\sqrt{5}}\cdot[(\frac{1+\sqrt{5}}{2})^n-(\frac{1-\sqrt{5}}{2})^n]
-
 $$
 
 + $c\cdot f(x) \to$ 数列倍增
@@ -151,13 +140,12 @@ $x^m$ 的系数即为满足 $e_1+e_2+\dots+e_n=m$ 的解的个数.
 
 ### 广义牛顿二项式定理
 
-$$ (x+y)^\alpha=\sum_{i=0}^{+\infty}\binom{\alpha}{i}x^{\alpha-i}y^i $$
+$$(x+y)^\alpha=\sum_{i=0}^{+\infty}\binom{\alpha}{i}x^{\alpha-i}y^i$$
 
 其中，
 
 $$
 \binom{n}{m}=\frac{n(n-1)\cdots(n-m+1)}{m!}=\frac{(n)_m}{m!}
-
 $$
 
 ### 多项式定理
@@ -310,7 +298,7 @@ $$
 ### Dirichlet级数生成函数
 
 $$
-F(s)=\sum_{i=1}^{+\infty}\frac{a_i}{i^s}$$
+F(s)=\sum_{i=1}^{+\infty}\frac{a_i}{i^s}
 $$
 
 而该种生成函数的卷积在数论方面有重要用途：
@@ -325,17 +313,21 @@ $$
 
 特别地，
 
-$$F(s)=\sum_{i=1}^{+\infty}\frac{1}{i^s}$$
+$$
+F(s)=\sum_{i=1}^{+\infty}\frac{1}{i^s}
+$$
 
-$$F^2(s)=\sum_{k=1}^{+\infty}\frac{d(k)}{k^s}$$
+$$
+F^2(s)=\sum_{k=1}^{+\infty}\frac{d(k)}{k^s}
+$$
 
 其中，$d(k)$ 代表 $k$ 的约数个数.
 
 例题：求长度为 $n$ 的 $01$ 字符串中的不可分解的字符串的个数
 
 - “不可分解”指不能写成两个或多个相同字符串的拼接
-  + $“100100100”= “100” * 3 $ 可分解
-  + $“1110”$ 不可分解
+  + “100100100” = “100” * 3  可分解
+  + “1110”  不可分解
 
 设 $f(x)$ 代表长度为 $x$ 的不可分解的 $01$ 字符串的数量.
 
