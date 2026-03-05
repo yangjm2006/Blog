@@ -151,7 +151,7 @@ $x^m$ 的系数即为满足 $e_1+e_2+\dots+e_n=m$ 的解的个数.
 
 ### 广义牛顿二项式定理
 
-$$(x+y)^\alpha=\sum_{i=0}^{+\infty}\binom{\alpha}{i}x^{\alpha-i}y^i$$
+$$ (x+y)^\alpha=\sum_{i=0}^{+\infty}\binom{\alpha}{i}x^{\alpha-i}y^i $$
 
 其中，
 
