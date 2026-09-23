@@ -25,7 +25,7 @@ $$
 
 ### 积性函数
 
-若 $gcd(a,b)=1$ ，时有 $f(ab)=f(a)f(b)$ ，则 $f$ 为积性函数.
+若 $\text{gcd}(a,b)=1$ ，时有 $f(ab)=f(a)f(b)$ ，则 $f$ 为积性函数.
 
 若对于任意正整数 $a,b$ 总有 $f(ab)=f(a)f(b)$ ，则 $f$ 为完全积性函数.
 
@@ -42,27 +42,55 @@ $n=\prod{p_i^{e^i}},f(n)=\prod{{f(p_i)}^{e^i}}$
 
 #### 恒等函数
 
-$I(x)=1$
+恒等函数是完全积性函数，定义为：
+$\text{I}(x)=1$
 
 #### 元函数
 
-$e(x)=[x=1]$
+元函数是完全积性函数，定义为：
+$\text{e}(x)=[x=1]$
 
 #### 单位函数
 
-$id(x)=x$
+单位函数是完全积性函数，定义为：
+$\text{id}(x)=x$
 
 #### 约数个数函数
 
-$d(x)=\sum_{i|x}1$
+约数个数函数是积性函数，定义为：
+$\text{d}(x)=\sum_{i|x}1$
 
 #### 除数函数
 
-
+除数函数是积性函数，定义为：
+$$\sigma_k(x)=\sum_{i|x}i^k$$
 
 #### 欧拉函数
 
 #### 莫比乌斯函数
+
+莫比乌斯函数定义为：
+$$
+\mu(x)=
+\begin{cases}
+1, & n=1,\\
+0, & n \text{ is divisible by a square > 1},\\
+(-1)^k, & n \text{ is the product of } k \text{ distinct primes}.
+\end{cases}
+$$
+
+性质：
+$$
+\sum_{d|n}\mu(d)=[n=1]
+$$
+
+证明：
+$$
+n=\prod_{i=1}^{k}{p_i^{e_i}},n'=\prod_{i=1}^k{p_i}
+$$
+$$
+\sum_{d|n}\mu(d)=\sum_{d|n'}\mu(d)=\sum_{i=0}^k\binom{k}{i}(-1)^i=(1-1)^{k}=[k=0]=[n=1]
+$$
 
 ### 莫比乌斯反演
 
